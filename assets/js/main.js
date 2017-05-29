@@ -1,24 +1,17 @@
-// var mensajeTitulo = document.getElementById("titulo");
-// var mensajeTexto = document.getElementById("mensaje");
-// var botonPublicar = document.getElementById("publicar");
-// var publicaciones = document.getElementById("publicaciones");
-//
-// botonPublicar.addEventListerner("click", publicar);
-//
-// function publicar(){
-//   publicaciones = document.createElement("div");
-//   var titulo = document.createElement("h4");
-//   var tituloIngresar = document.createTextNode(mensajeTitulo.value);
-//   var mensaje = document.createElement("p");
-//   var mensajeIngresar = document.createTextNode(mensajeTexto.value);
-//
-//   titulo.appendChild(tituloIngresar);
-//   contenedor.appendChild(titulo);
-//   titulo.style.color="pink";
-//
-//   mensaje.appendChild(mensajeIngresar);
-//   mensajesPublicados.appendChild(mensaje);
-//   mensaje.style.color="grey";
-// }
+var publicarMensaje = document.getElementById("publicarMensaje");
+publicarMensaje.addEventListener("click", mensajeNuevo);
 
-function agregarComentario(){}
+function mensajeNuevo(){
+  var contenedor = document.getElementById("publicaciones");
+
+  var mensajeTitulo = document.getElementById("titulo").value;
+  var nuevoTitulo = document.createElement("h4");
+  // nuevoTitulo.innerHTML = mensajeTitulo;
+  contenedor.nuevoTitulo.appendChild(document.createTextNode(mensajeTitulo));
+
+  // var mensajeTexto = document.getElementById("mensaje").value;
+  //
+  // contenedor = document.createElement("div");
+  // var nuevoMensaje = document.createTextNode("p");
+  // mensajeNuevo.innerHTML = mensajeTitulo;
+}
